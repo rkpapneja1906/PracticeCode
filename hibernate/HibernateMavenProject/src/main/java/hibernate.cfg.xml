@@ -9,9 +9,11 @@
 <property name="connection.username">root</property>
 <property name="connection.password">livfin</property>
 <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-<property name="hbm2ddl.auto">update</property>
+<property name="hbm2ddl.auto">create</property>
 <property name="show_sql">true</property>
 <mapping class="com.rahul.Student"/>
 <mapping class="com.rahul.Address"/>
+<mapping class="com.rahul.map.Question"/>
+<mapping class="com.rahul.map.Answer"/>
 </session-factory>
 </hibernate-configuration>
