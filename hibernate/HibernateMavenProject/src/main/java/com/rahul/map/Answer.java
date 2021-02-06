@@ -3,8 +3,7 @@ package com.rahul.map;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Answer {
@@ -13,7 +12,7 @@ public class Answer {
 	@Column(name="answer_id")
 	private int answerID;
 	private String answer;
-	@OneToOne
+	@ManyToOne
 	private Question question;
 	
 	public int getAnswerID() {
